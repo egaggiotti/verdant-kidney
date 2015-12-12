@@ -4,11 +4,10 @@
 <head>
     <title></title>
     @Html.Raw(Styles.Render("~/Content/css").ToString())
+    @Html.Raw(@Scripts.Render("~/bundles/extLibs", "~/bundles/angular").ToString())
     @RenderSection("head", required: false)
 </head>
-<body>
+<body data-ng-app="app" data-ng-cloak>
     @RenderBody()
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
-    @Html.Raw(@Scripts.Render("~/bundles/extLibs").ToString())
 </body>
 </html>

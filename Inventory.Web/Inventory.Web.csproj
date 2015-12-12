@@ -114,7 +114,10 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery.ba-throttle-debounce.js" />
+    <Content Include="Scripts\jquery.ba-throttle-debounce.min.js" />
     <Content Include="Scripts\jquery.stickyheader.js" />
+    <Content Include="Scripts\ng-controllers\ngIndexController.js" />
     <Content Include="Styles\component.css" />
     <Content Include="Styles\demo.css" />
     <Content Include="Styles\normalize.css" />

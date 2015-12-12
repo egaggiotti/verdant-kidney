@@ -9,7 +9,11 @@ namespace Inventory.Web
             bundles.Add(new ScriptBundle("~/bundles/extLibs").Include(
                 "~/Scripts/jquery-*",
                 "~/Scripts/angular.js",
-                "~/Scripts/jquery.stickyheader.js"));
+                "~/Scripts/jquery.stickyheader.js",
+                "~/Scripts/jquery.ba-throttle-debounce.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+               "~/Scripts/ng-controllers/ngIndexController.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Styles/normalize.css",
