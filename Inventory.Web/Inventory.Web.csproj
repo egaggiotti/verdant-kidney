@@ -101,26 +101,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="Fonts\blokk\BLOKKRegular.svg" />
     <Content Include="Fonts\codropsicons\codropsicons.svg" />
     <Content Include="Fonts\codropsicons\license.txt" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery.ba-throttle-debounce.js" />
     <Content Include="Scripts\jquery.ba-throttle-debounce.min.js" />
     <Content Include="Scripts\jquery.stickyheader.js" />
     <Content Include="Scripts\ng-controllers\ngIndexController.js" />
-    <Content Include="Styles\component.css" />
-    <Content Include="Styles\demo.css" />
-    <Content Include="Styles\normalize.css" />
+    <Content Include="Scripts\ng-services\ngIndexService.js" />
+    <Content Include="Content\component.css" />
+    <Content Include="Content\demo.css" />
+    <Content Include="Content\normalize.css" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\index.cshtml" />
     <Content Include="Fonts\blokk\BLOKKRegular.eot" />

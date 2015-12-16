@@ -2,6 +2,7 @@
 using Inventory.Messaging;
 using Inventory.Web.Services;
 using Nancy;
+using Nancy.ModelBinding;
 
 namespace Inventory.Web.Modules
 {
@@ -13,9 +14,10 @@ namespace Inventory.Web.Modules
         {
             Get["/"] = _ => View["Views/Index"];
 
-            Post["/"] = _ =>
+            Post["/"] = parameters =>
             {
-                _bus.Send(new CreateInventoryItem(Guid.NewGuid(), Request.Form.name));
+                var command = this.Bind<Command>();
+                _bus.Send(new CreateInventoryItem(Guid.NewGuid(), command.Name));
                 return View["Views/Index"];
             };
 

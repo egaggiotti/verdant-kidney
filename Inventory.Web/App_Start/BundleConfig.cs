@@ -13,12 +13,15 @@ namespace Inventory.Web
                 "~/Scripts/jquery.ba-throttle-debounce.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-               "~/Scripts/ng-controllers/ngIndexController.js"));
+                "~/Scripts/app.js",
+                "~/Scripts/ng-controllers/*.js",
+                "~/Scripts/ng-services/*.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Styles/normalize.css",
-                "~/Styles/demo.css",
-                "~/Styles/component.css"));
+                 "~/Content/bootstrap.css",
+                "~/Content/normalize.css",
+                "~/Content/demo.css",
+                "~/Content/component.css"));
 
             //BundleTable.EnableOptimizations = true;
         }

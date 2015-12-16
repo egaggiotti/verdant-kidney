@@ -18,7 +18,6 @@ namespace Inventory.Persistence.Modules
 
             Get["/{aggregate:guid}"] = parameters =>
             {
-
                 dynamic events = new ExpandoObject();
 
                 try

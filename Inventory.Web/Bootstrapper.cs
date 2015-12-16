@@ -19,7 +19,7 @@ namespace Inventory.Web
         protected override void ConfigureConventions(NancyConventions nancyConventions)
         {
             nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/Scripts"));
-            nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/Styles"));
+            nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/Content"));
             nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/Fonts"));
         }
     }

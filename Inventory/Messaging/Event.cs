@@ -2,66 +2,66 @@ using System;
 
 namespace Inventory.Messaging
 {
-  public class Event : Message
-  {
-    public int Version;
-  }
-
-  public class InventoryItemDeactivated : Event
-  {
-    public readonly Guid Id;
-
-    public InventoryItemDeactivated(Guid id)
+    public class Event : IMessage
     {
-      Id = id;
+        public int Version;
     }
-  }
 
-  public class InventoryItemCreated : Event
-  {
-    public readonly Guid Id;
-    public readonly string Name;
-    public InventoryItemCreated(Guid id, string name)
+    public class InventoryItemDeactivated : Event
     {
-      Id = id;
-      Name = name;
+        public readonly Guid Id;
+
+        public InventoryItemDeactivated(Guid id)
+        {
+            Id = id;
+        }
     }
-  }
 
-  public class InventoryItemRenamed : Event
-  {
-    public readonly Guid Id;
-    public readonly string NewName;
-
-    public InventoryItemRenamed(Guid id, string newName)
+    public class InventoryItemCreated : Event
     {
-      Id = id;
-      NewName = newName;
+        public readonly Guid Id;
+        public readonly string Name;
+        public InventoryItemCreated(Guid id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
-  }
 
-  public class ItemsCheckedInToInventory : Event
-  {
-    public Guid Id;
-    public readonly int Count;
-
-    public ItemsCheckedInToInventory(Guid id, int count)
+    public class InventoryItemRenamed : Event
     {
-      Id = id;
-      Count = count;
+        public readonly Guid Id;
+        public readonly string NewName;
+
+        public InventoryItemRenamed(Guid id, string newName)
+        {
+            Id = id;
+            NewName = newName;
+        }
     }
-  }
 
-  public class ItemsRemovedFromInventory : Event
-  {
-    public Guid Id;
-    public readonly int Count;
-
-    public ItemsRemovedFromInventory(Guid id, int count)
+    public class ItemsCheckedInToInventory : Event
     {
-      Id = id;
-      Count = count;
+        public Guid Id;
+        public readonly int Count;
+
+        public ItemsCheckedInToInventory(Guid id, int count)
+        {
+            Id = id;
+            Count = count;
+        }
     }
-  }
+
+    public class ItemsRemovedFromInventory : Event
+    {
+        public Guid Id;
+        public readonly int Count;
+
+        public ItemsRemovedFromInventory(Guid id, int count)
+        {
+            Id = id;
+            Count = count;
+        }
+    }
 
 }

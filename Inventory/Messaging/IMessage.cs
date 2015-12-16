@@ -1,5 +1,5 @@
 ﻿
 namespace Inventory.Messaging
 {
-  public interface Message {}
+    public interface IMessage { }
 }
